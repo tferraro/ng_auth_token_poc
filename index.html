@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="tokenAuthPoc" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="tokenAuthPoc" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="tokenAuthPoc" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="es" class="no-js">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NgTokenAuth POC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.1.0/angular-cookie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-token-auth/0.0.30/ng-token-auth.js"></script>
+    <script src="app.js"></script>
+
+  </head>
+  <body ng-app="tokenAuthPoc">
+    <div ng-controller="PocController">
+      <h4>{{name}}</h4>
+      <p>{{user || 'No data'}}</p>
+        <div>
+          <input ng-click="login()" type='button' value='Log in'>
+        </div>
+    </div>
+  </body>
+</html>
